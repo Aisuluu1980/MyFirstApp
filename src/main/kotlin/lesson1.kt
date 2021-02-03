@@ -1,0 +1,55 @@
+//fun main(){
+//    val name: String = "Kotlin"   //String необязателен если val, и для val нельзя присвоить новое значение, только один раз
+//     val name = "Python"
+
+//    println(name)
+//}
+
+//fun main(){
+//    var name = "Kotlin"   //если меняю переменную то использую var
+//
+//    name = "java"
+//    println(name)
+//}
+//fun main(){
+//    val name = "Kotlin"
+//    val name2 = "Java"
+//    val combined = name + name2   //лучше так не создавать
+//    val text = "I love $name and $name2."
+//    println(combined)
+//    println(text)
+//}
+//fun main(){
+//    val name = "Kotlin"
+//    val char = name.toCharArray()[0]   //достает нулевой индекс у слова Kotlin  char = это символ
+//    println(char)
+//}
+//fun main(){
+//    val name = "Kotlin"
+//    var char = 'T'
+//    val ascii = char.toInt()   //для символа Т соответствует цифра 84
+//    println(ascii)
+//}
+//fun main(){
+//    var bool = true
+//    var bool2 = false
+//    println(bool2)
+//}
+//Byte = 1 byte
+//Short= 2 byte
+//Int = 4 byte
+//Long = 9 byte
+//Float = 4 byte менее точное значение
+//Double более точное
+//fun main(){
+//    println("Byte max value: " + Byte.MAX_VALUE)   //часто используется int, но если число большое то лучше использовать short
+//    println("Short max value: " + Short.MAX_VALUE)
+//    println("Int max value: " + Int.MAX_VALUE)
+//    println("Long max value: " + Long.MAX_VALUE)
+//}
+
+fun main(){
+//    val value: Float = 10/4f   //вывод 2,5 вещественное число
+    val value: Int = 10/4   //вывод только целого числа
+    print((value))
+}
