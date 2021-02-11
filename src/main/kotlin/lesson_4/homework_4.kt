@@ -8,7 +8,7 @@ fun main(args: Array<String>){
     println("Время поезда в пути: $time минут")
 
     val changeNumber = changeFun()
-    println("Дополнительное задание №2")
+
 }
 
 fun quadraticFun() {
@@ -36,6 +36,7 @@ fun timeFun(hoursDepart: Int, minutesDepart: Int, hoursArrive: Int, minutesArriv
         (hoursArrive - hoursDepart)*60 + (minutesArrive - minutesDepart))
 
 fun changeFun(){
+    println("Дополнительное задание №2")
     println("Введите два числа: ")
     var first: Int= readLine()!!.toInt()
     var second: Int = readLine()!!.toInt()
