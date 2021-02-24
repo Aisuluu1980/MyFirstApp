@@ -9,7 +9,7 @@ fun sumLists(){
     val arrayFirst = arrayOf(1, 2, 3)
     val arraySecond = arrayOf(4, 5, 6)
 
-    val newArray =arrayFirst.sum() + arraySecond.sum()
+    val newArray = arrayFirst.sum() + arraySecond.sum()
     println(newArray)
 }
 
