@@ -1,0 +1,97 @@
+package lesson_18
+
+fun main(){
+    val cat = Cat("Barsik", "black")
+    println(cat.name)
+    println(cat.color)
+    val paper = Paper("black", "A4")
+    println(paper.price)
+    val myFood = Food("Burger")
+    println(myFood.nameFood)
+    val boiler = waterBoiler(180, "LG")
+    println(boiler.model)
+    val battery = Battery("siemens", "big", 600)
+    println(battery.name)
+    println(battery.quantity)
+    val liquid = Liquid("Pink")
+    println(liquid.colorLiquid)
+    val cup = Cup("Tea", "small")
+    println(cup.sort)
+    val box = Box("My blue box")
+    println(box.name)
+    val student = Student("Aisl", "Dzhusupova", "Kotlin")
+    println(student.name)
+    val worker = Worker("Nadina", "Sanjarbek", 25, "BaitushumBank")
+    println(worker.name)
+    println(worker.company)
+}
+class Cat(name:String, color:String){
+    var name: String = "Murzik"
+    var color:String = "white"
+
+    init {
+        this.name = name
+        this.color = color
+    }
+}
+class Paper(val color: String, val size:String){
+    var price: Int = 54
+    constructor(color: String, size: String, price: Int): this(color, size){
+        this.price = price
+    }
+}
+
+class Food(name:String){
+    var nameFood = name.toUpperCase()
+}
+
+class waterBoiler(capacity:Int, model:String){
+    var capacity: Int = 180
+    var model:String = "LG"
+
+    init {
+        this.capacity = capacity
+        this.model = model
+    }
+}
+
+class Battery(val name: String, val size:String){
+    var quantity: Int = 150
+    constructor(name: String, size: String, quantity: Int): this(name, size){
+        this.quantity = quantity
+    }
+}
+
+class Liquid(color: String){
+    var colorLiquid = color.toLowerCase()
+}
+class Cup(sort:String, size:String){
+    var sort: String = "Coffee cup"
+    var size: String = "Big"
+    init {
+        this.sort = sort
+        this.size = size
+    }
+}
+class Box(name: String){
+    var name = "Red box"
+    init {
+        this.name = name
+    }
+}
+class Student(name:String, surname:String, group:String){
+    var name: String = "Aisuluu"
+    var surname: String = "Djusupova"
+    var group :String = "Kotlin"
+    init {
+        this.name = name
+        this.surname = surname
+        this.group = group
+    }
+}
+class Worker(val name: String, val surname:String, age:Int){
+    var company: String = "BakaiBank"
+    constructor(name: String, surname: String, age: Int, company:String): this(name, surname, age){
+        this.company = company
+    }
+}
